@@ -6,6 +6,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -993,17 +994,49 @@ h1, h2, h3, p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 94px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 94px 0;
+  }
+}
 .card__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .card__list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__list {
+    margin-bottom: 48px;
+  }
+}
 .card__item {
-  flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
+  border: 1px solid #EEE;
+  flex-basis: 100%;
+  overflow: hidden;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .card__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .card__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
@@ -1060,8 +1093,22 @@ h1, h2, h3, p {
 .button__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  row-gap: 15px;
+  justify-content: start;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-right: 100px;
+}
+@media screen and (min-width: 480px) {
+  .button__list {
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button__list {
+    justify-content: center;
+    margin-right: 0px;
+  }
 }
 
 .button__btn {
