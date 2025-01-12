@@ -75,8 +75,9 @@
   }
 
   &__link {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    @include flax($justify:none, $wrap:nowrap);
     gap: 10px;
 
     &:hover,
@@ -93,10 +94,7 @@
   
   &__cell {
     color: $added-text;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.24px;
+    @extend %links-header;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1200px) {

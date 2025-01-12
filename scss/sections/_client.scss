@@ -61,9 +61,10 @@
     outline: 1px solid #afb1b8;
     width: 100%;
     height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flax($wrap:nowrap, $direction:none);
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

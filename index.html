@@ -326,6 +326,7 @@
         </div>
       </section>
     </main>
+
      <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
@@ -400,13 +401,13 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="modal__form">
           <div class="modal__box">
-            <label class="modal__label" for="name"
-              >Ім'я
+            <label class="modal__label" for="name">Ім'я
               <input type="text" class="modal__input" id="name" required />
               <svg class="modal__icon">
                 <use href="./img/symbol-defs.svg#icon-person"></use>
@@ -414,11 +415,8 @@
             </label>
           </div>
           <div class="modal__box">
-            <label class="modal__label" for="tel"
-              >Телефон
-              <input
-                type="tel"
-                class="modal__input"
+            <label class="modal__label" for="tel">Телефон
+              <input type="tel" class="modal__input"
                 id="tel"
                 required
                 pattern="^(\+?38)?0\d{9}$"
@@ -430,8 +428,7 @@
             </label>
           </div>
           <div class="modal__box">
-            <label class="modal__label" for="post"
-              >Пошта
+            <label class="modal__label" for="post">Пошта
               <input type="email" class="modal__input" id="post" required />
 
               <svg class="modal__icon">
@@ -439,9 +436,7 @@
               </svg>
             </label>
           </div>
-          <label class="modal__label" for="coment"
-            >Коментар
-            <textarea
+          <label class="modal__label" for="coment">Коментар<textarea
               name="feedback"
               placeholder="Введіть текст"
               class="modal__coment"

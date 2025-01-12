@@ -85,9 +85,10 @@
   &__link {
     padding: 12px 12px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flax($wrap:nowrap, $direction:none);
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

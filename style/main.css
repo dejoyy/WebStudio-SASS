@@ -2,6 +2,20 @@ body {
   font-family: "Roboto";
 }
 
+.header__cell {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.24px;
+}
+
+.footer__subscribe, .footer__title, .work__deck, .advant__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -119,7 +133,10 @@ h1, h2, h3, p {
 }
 .header__link {
   display: flex;
+  justify-content: none;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
   gap: 10px;
 }
 .header__link:hover .header__cell, .header__link:focus .header__cell {
@@ -130,10 +147,6 @@ h1, h2, h3, p {
 }
 .header__cell {
   color: #757575;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
@@ -340,10 +353,6 @@ h1, h2, h3, p {
 .advant__title {
   text-align: center;
   color: #212121;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -410,10 +419,6 @@ h1, h2, h3, p {
 .work__deck {
   color: #fff;
   text-align: center;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
 }
 
@@ -502,6 +507,8 @@ h1, h2, h3, p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: none;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -581,6 +588,8 @@ h1, h2, h3, p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -616,9 +625,10 @@ h1, h2, h3, p {
 }
 .footer > .container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: none;
   gap: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -693,10 +703,6 @@ h1, h2, h3, p {
 }
 .footer__title {
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -709,6 +715,8 @@ h1, h2, h3, p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
@@ -742,10 +750,6 @@ h1, h2, h3, p {
 }
 .footer__subscribe {
   color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
   display: inline-block;
@@ -753,8 +757,8 @@ h1, h2, h3, p {
 .footer__form {
   display: flex;
   align-items: center;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
 }
 @media screen and (min-width: 1200px) {
   .footer__form {
@@ -874,6 +878,9 @@ h1, h2, h3, p {
   position: absolute;
   top: 55%;
   left: 14px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input {
   display: block;
@@ -886,6 +893,7 @@ h1, h2, h3, p {
   outline: rgba(0, 0, 0, 0);
   padding: 11px 12px 11px 42px;
   font-size: 14px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:hover, .modal__input:focus {
   border: 1px solid #2196f3;
@@ -910,6 +918,7 @@ h1, h2, h3, p {
   resize: none;
   outline: rgba(0, 0, 0, 0);
   font-size: 14px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__coment:focus {
   border-color: #2196f3;
@@ -988,6 +997,9 @@ h1, h2, h3, p {
   width: 18px;
   height: 18px;
   fill: rgb(0, 0, 0);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card {
@@ -1011,7 +1023,6 @@ h1, h2, h3, p {
 }
 @media screen and (min-width: 768px) {
   .card__list {
-    justify-content: center;
     margin-bottom: 30px;
   }
 }

@@ -52,10 +52,7 @@
   &__title {
     text-align: center;
     color: $text-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+    @extend %font;
     text-transform: uppercase;
     margin-bottom: 10px;
     @media screen and (min-width: 768px) {

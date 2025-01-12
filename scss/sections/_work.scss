@@ -40,10 +40,7 @@
   &__deck {
     color: $title-color;
     text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+    @extend %font;
     text-transform: uppercase;
   }
 }
