@@ -5,3 +5,11 @@
     flex-wrap: $wrap;
     flex-direction: $direction;
 }
+
+
+@mixin transitioned($property: color, $duration: 250ms,
+    $t-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $t-function;
+}

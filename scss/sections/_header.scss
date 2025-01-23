@@ -49,6 +49,21 @@
     color: $accent-color;
   }
 
+  &__btn {
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    width: 25px;
+    height: 30px;
+    fill: $logo-color;
+  }
+
   &__list {
     display: none;
     flex-direction: column;
@@ -174,4 +189,123 @@ display: none;
     opacity: 1;
       transform: scale(1);
   }
+}
+
+
+// ================================
+
+
+.menu {
+  background-color: $title-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0 48px 40px;
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+opacity: 1;
+z-index: 1;
+
+&__btn {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+height: 40px;
+position: absolute;
+top: 10px;
+right: 15px;
+}
+
+
+&__close {
+  width: 18.667px;
+height: 18.667px;
+fill: $text-color;
+}
+
+
+&__item:first-child {
+  margin-bottom: 36px;
+}
+
+&__item:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+
+&__link {
+  color: $text-color;
+font-size: 40px;
+font-weight: 500;
+line-height: 1.17;
+letter-spacing: 0.8px;
+}
+
+&__link:hover {
+  color: $accent-color;
+}
+
+&__contact-list {
+  margin-top: 150px;
+}
+
+&__contact-item:first-child {
+  margin-bottom: 32px;
+}
+
+&__link-contact {
+  color: $added-text;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.48px;
+}
+
+
+&__contact-item:first-child {
+  .menu__link-contact {
+      color: $accent-color;
+      font-size: 34px;
+      line-height: 1.17;
+      letter-spacing: 0.68px;
+  }
+}
+
+
+&__list-social {
+  display: flex;
+  margin-top: 64px;
+}
+
+&__link-social {
+  color: $accent-color;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22px;
+  letter-spacing: 0.36px;
+}
+
+
+&__item-social {
+  &:not(:last-child) {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      width: 1px;
+      height: 22px;
+      background: rgba(33, 33, 33, 0.20);
+      margin-left: 10px;
+    }
+  }
+}
+
+}
+
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
