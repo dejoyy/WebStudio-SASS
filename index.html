@@ -82,13 +82,14 @@
     
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero__box">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__btn" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
+      
       <section class="advant">
         <div class="container">
           <ul class="advant__list">
@@ -127,19 +128,32 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img src="./img/comp.jpg" alt="comp" class="work-images" />
+              <picture>
+                <source srcset="./img/desktop/workone-desktop@1x.webp 1x, ./img/desktop/workone-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./img/tablet/hero-tablet@1x.webp 1x, ./img/tablet/hero-tablet@2x.webp 2x" media="(min-width: 768px)">
+                <source srcset="./img/mobile/workone-mobile@1x.webp 1x, ./img/mobile/workone-mobile@2x.webp 2x" media="(max-width: 767px)">
+                <img src="./img/comp.jpg" alt="comp" class="work-images" />
+              </picture>
               <div class="work__wrap">
                 <h3 class="work__deck">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work__item">
+            <picture>
+              <source srcset="./img/desktop/worktwo-desktop@1x.webp 1x, ./img/desktop/worktwo-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./img/tablet/worktwo-tablet@1x.webp 1x, ./img/tablet/worktwo-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source srcset="./img/mobile/worktwo-mobile@1x.webp 1x, ./img/mobile/worktwo-mobile@2x.webp 2x" media="(max-width: 767px)">
               <img src="./img/tel.jpg" alt="tel" class="work__images" />
+            </picture>
               <div class="work__wrap">
                 <h3 class="work__deck">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work__item">
+            <picture>
+              <source srcset="./img/desktop/workthree-desktop@1x.webp 1x, ./img/desktop/workthree-desktop@2x.webp 2x" media="(min-width: 1200px)">
               <img src="./img/tablet.jpg" alt="tablet" class="work__images" />
+            </picture>
               <div class="work__wrap">
                 <h3 class="work__deck">Дизайнерські рішення</h3>
               </div>
@@ -153,7 +167,12 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
+              <picture>
+                <source srcset="./img/desktop/igor-desktop@1x.webp 1x, ./img/desktop/igor-desktop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./img/tablet/igor-tablet@1x.webp 1x, ./img/tablet/igor-tablet@2x.webp 2x " media="(min-width: 768px)"> 
+                <source srcset="./img/mobile/igor-mobile@1x.webp 1x, ./img/mobile/igor-mobile@2x.webp 2x" media="(max-width: 767px)"> 
               <img src="./img/igor.jpg" alt="igor" class="team__img" />
+            </picture>
               <div class="team__wrap">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__taxt">Product Designer</p>
