@@ -20,7 +20,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -344,41 +343,37 @@ h1, h2, h3, p {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/hero-tablet@2x.webp);
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero-desktop@1x.webp);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero-desktop@2x.webp);
   }
 }
-@media screen and (min-width: 768px) {
-  .hero__title {
-    color: #fff;
-    text-align: center;
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.16;
-    letter-spacing: 1.56px;
-    text-transform: uppercase;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    animation-name: title-move;
-    animation-duration: 2000ms;
-  }
+.hero__title {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.16;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) and (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .hero__title {
     width: 360px;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
@@ -386,51 +381,26 @@ h1, h2, h3, p {
     width: 696px;
   }
 }
-@media screen and (min-width: 768px) {
-  @keyframes title-move {
-    0% {
-      transform: translateX(-1500px) scale(0);
-      color: #000;
-    }
-    100% {
-      transform: translateX(0) scale(1);
-      color: #fff;
-    }
-  }
-  .hero__btn {
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    background-color: #2196f3;
-    padding: 10px 24px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    animation-name: btn-move;
-    animation-duration: 2000ms;
-  }
+.hero__btn {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  background-color: #2196f3;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero__btn {
     padding: 10px 32px;
   }
 }
-@media screen and (min-width: 768px) {
-  @keyframes btn-move {
-    0% {
-      transform: translateX(1500px) rotate(0) scale(0);
-      color: #000;
-      background-color: red;
-    }
-    100% {
-      transform: translateX(0) rotate(360deg) scale(1);
-      color: #fff;
-      background-color: #2196f3;
-    }
-  }
+.hero__btn:hover {
+  background-color: #0c7cd5;
 }
 
 .advant {
